@@ -83,7 +83,7 @@ class Squad:
                 self.operatives.append(operative)
                 for codename in codenames:
                     if codename not in [o.codename for o in self.operatives]:
-                        codename = chosen
+                        chosen = codename
                         break
                 operative.codename = chosen
 
